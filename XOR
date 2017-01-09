@@ -19,6 +19,7 @@ x = y - x
 
 
 Problem: Given an array of size n-1 containing numbers in the range of 1 to n, no duplicates, find the missing number.
+https://github.com/geekyP/algos/blob/master/src/com/problems/FindMissingNumber.java
 Solution using XOR:
 X1 = XOR all the numbers in the array
 X2 = XOR all the numbers from 1 to n
