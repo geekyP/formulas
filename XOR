@@ -16,3 +16,18 @@ Solution using subtraction:
 x = x - y
 y = x + y
 x = y - x
+
+
+Problem: Given an array of size n-1 containing numbers in the range of 1 to n, no duplicates, find the missing number.
+Solution using XOR:
+X1 = XOR all the numbers in the array
+X2 = XOR all the numbers from 1 to n
+missing number = X1 ^ X2
+time complexity = O(n)
+
+Solution using summation:
+S1 = Sum all the numbers in the array
+S2 = Sum all the numbers from 1 to n = n(n+1)/2
+missing number = S2 - S1
+time complexity = O(n)
+can have integer overflow problem because of a large sum
