@@ -1,0 +1,18 @@
+
+Assume that p1, p2, ...pn are Boolean variables, then, 
+p1 (+) p2 (+) ... (+) pn is true if the number of variables with the value true is odd,
+and is false if the number of variables with the value true is even.
+
+Also, p1 (+) p2 (+) ... (+) pn == ( p1 + p2 + ... + pn ) % 2
+XOR applied to a bunch of Boolean variables is the same as summing up all the variables' values (where true is 1 and false is 0), and dividing mod 2
+
+Problem: swap two numbers without using extra space
+Solution using XOR: let x = A and y = B
+x = x ^ y
+y = x ^ y
+x = x ^ y
+
+Solution using subtraction:
+x = x - y
+y = x + y
+x = y - x
